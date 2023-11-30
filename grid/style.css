@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(167, 186, 202);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.4rem;
+  padding: 2.5rem;
+  border: 2px solid white;
+}
+
+.div-container {
+  /* height: 100px;
+  width: 100px; */
+  background-color: rgb(16, 32, 32);
+  border: 3px solid rgb(192, 172, 172);
+  padding: 2rem;
+  color: white;
+}
+
+/* ---------box1---------- */
+.div1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+.item {
+  border: transparent;
+  border-radius: 2px;
+}
+
+/* ------box-2 -------- */
+
+.div2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.i1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.i2 {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* ----------------box-3------------------------- */
+
+.div3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.it-1,
+.it-4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.it-4 {
+  grid-row-start: 3;
+}
+.it-3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/* -----------------box-4--------------------- */
+.div4 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0.5rem;
+}
+.g1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.g2 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.g3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+.g4 {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+.g5 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+/* --------------------box-5------------------ */
+.div5 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+/* ----------------------------box-6---------------------- */
+
+.div6 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.4rem;
+}
+.b1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.b7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.b10 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 4;
+}
+.b11 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  /* grid-row-end: 5; */
+}
+.b12 {
+  grid-column-start: 4;
+  /* grid-column-end: 4; */
+  grid-row-start: 5;
+}
+.b8 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+}
+.b9 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+}
+
+/* ---------------------------box-7------------------- */
+.div7 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+.c3 {
+  grid-column-start: 1;
+  /* grid-column-end: 5; */
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.c4 {
+  grid-column-start: 2;
+  /* grid-column-end: 5; */
+  grid-row-start: 2;
+  grid-row-end: 4;
+  display: grid;
+  padding: 0.2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.4rem;
+}
+.d1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* ----------------box-8-------------------------- */
+.div8 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.e8 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  /* grid-row-end: 4; */
+}
+.e9 {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 3;
+}
+
+/* ------------------box-9------------------------- */
+.div9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.f1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+.f2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.f3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  /* grid-row-end: 4;  */
+}
